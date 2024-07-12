@@ -3,7 +3,6 @@ import Edit from "../../../assets/images/edit.png";
 import Delete from "../../../assets/images/delete.png";
 import Right from "../../../assets/images/right.png";
 import Wrong from "../../../assets/images/x-mark.png";
-import Style from "./Items.module.css";
 
 function Items(props) {
   const [isEditing, setEditing] = useState(false);
@@ -20,10 +19,10 @@ function Items(props) {
   };
 
   return (
-    <div className={Style.container}>
+    <div>
       {isEditing ? (
         <>
-          <div className={Style.INPUTFILD}>
+          <div>
             <input
               type="text"
               value={inpText}
@@ -31,30 +30,30 @@ function Items(props) {
             />
           </div>
 
-          <div className={Style.EditesBTN}>
+          <div>
             <div className="mt-2">
               <img src={Right} width="25px" alt="Right" />
             </div>
 
             <div className="mt-1">
               <button onClick={handleUpdate}>
-                <img src={Wrong} alt="Wrong" />
+                <img src={Wrong} width="25px" alt="Wrong" />
               </button>
             </div>
           </div>
         </>
       ) : (
         <>
-          <div className={Style.Items}>
+          <div>
             <p>{props.item}</p>
           </div>
 
-          <div className={Style.BTN}>
+          <div>
             <button onClick={() => setEditing(true)}>
-              <img src={Edit} alt="Edit" />
+              <img src={Edit} width="30px" alt="Edit" />
             </button>
             <button onClick={() => props.deleteData(props.item)}>
-              <img src={Delete} alt="Delete" />
+              <img src={Delete} width="30px" alt="Delete" />
             </button>
           </div>
         </>

@@ -1,10 +1,10 @@
 import React from "react";
-import Style from "./ToDoItems.module.css";
+
 import Items from "../Items/Items";
 function ToDoItems(props) {
   return (
     <>
-      <div className={Style.container}>
+      <div>
         <div>
           {props.data.map((item, index) => (
             <Items

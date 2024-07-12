@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./ToDoInput.module.css";
+
 // I have imports UI Items
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
@@ -12,8 +12,8 @@ function ToDoInput(props) {
   return (
     <>
       <div>
-        <div className={style.container}>
-          <div className={style.InputText}>
+        <div>
+          <div>
             <input
               onChange={(e) => {
                 setText(e.target.value);
@@ -26,7 +26,6 @@ function ToDoInput(props) {
 
             <br />
             <Button
-              className="mt-3"
               onClick={() => {
                 props.addData(text);
                 setText(" ");

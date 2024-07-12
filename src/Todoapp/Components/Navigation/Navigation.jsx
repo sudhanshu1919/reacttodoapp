@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import arrowicon from "../../assets/images/down-arrow.png";
 // This is Css File, We have import here
-import "./Navigation.css";
+// import "./Navigation.css";
 import { Style } from "@mui/icons-material";
 
 function Navigation() {
@@ -10,15 +10,7 @@ function Navigation() {
     <>
       <nav class="navbar navbar-expand-lg navbar-light MainContainer">
         <div class="container-fluid">
-          <a
-            class="navbar-brand"
-            style={{
-              fontFamily: "sans-serif",
-              fontWeight: "600",
-              color: "white",
-            }}
-            href="#"
-          >
+          <a class="navbar-brand" href="#">
             Web Developer
           </a>
           <button
