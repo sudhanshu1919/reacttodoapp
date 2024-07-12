@@ -53,10 +53,6 @@ function App(value) {
               />
             }
           />
-
-          <Route path="/Carousel" element={<Carousel />} />
-          {/* <Route path="/Home" element={<Home />} />
-          <Route path="/AboutInfo" element={<AboutInfo />} /> */}
           <Route
             path="/MainToDo"
             element={
@@ -70,6 +66,7 @@ function App(value) {
               />
             }
           />
+          <Route path="/Carousel" element={<Carousel />} />
           <Route path="/InfoForm" element={<InfoForm />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
