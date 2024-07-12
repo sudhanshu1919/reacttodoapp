@@ -39,7 +39,6 @@ function App(value) {
   return (
     <>
       <BrowserRouter>
-        <Navigation />
         <Routes>
           <Route
             path="/"

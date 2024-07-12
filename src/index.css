@@ -1,3 +1,63 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.main {
+  background-color: black;
+}
+.D-flex {
+  display: flex;
+}
+
+.j-conatinet {
+  justify-content: space-around;
+}
+
+.main-headding {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.main-headding:hover {
+  color: rgb(255, 255, 255);
+}
+.a-text a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.a-text a:hover {
+  color: #4caf50;
+}
+
+.todo-inp {
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px 40px 5px;
+  color: white;
+  font-size: 17px;
+  width: 73vh;
+}
+
+.todo-inp2 {
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px 40px 5px;
+  color: white;
+  font-size: 17px;
+}
+
+.todo-inp3 {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px 25px 5px;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  width: 70vh;
+  overflow-y: auto;
+}

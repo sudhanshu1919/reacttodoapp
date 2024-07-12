@@ -1,11 +1,11 @@
 import React from "react";
-
+import styled from "styled-components";
 import Items from "../Items/Items";
 function ToDoItems(props) {
   return (
     <>
       <div>
-        <div>
+        <MainConatiner>
           {props.data.map((item, index) => (
             <Items
               item={item}
@@ -15,10 +15,15 @@ function ToDoItems(props) {
               updateData={props.updateData}
             />
           ))}
-        </div>
+        </MainConatiner>
       </div>
     </>
   );
 }
 
+const MainConatiner = styled.div`
+  overflow-y: auto;
+  height: 60vh;
+  margin-top: 20px;
+`;
 export default ToDoItems;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import arrowicon from "../../assets/images/down-arrow.png";
+import downarrow from "../../assets/images/down-arrow.png";
 // This is Css File, We have import here
 // import "./Navigation.css";
 import { Style } from "@mui/icons-material";
@@ -8,9 +8,9 @@ import { Style } from "@mui/icons-material";
 function Navigation() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light MainContainer">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand main-headding" href="#">
             Web Developer
           </a>
           <button
@@ -23,15 +23,15 @@ function Navigation() {
             aria-label="Toggle navigation"
           >
             <span className={Style.BTN}>
-              <img src={arrowicon} width="22px" alt="Down" />
+              <img src={downarrow} width="22px" alt="Down" />
             </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 a-text">
               <li class="nav-item items">
                 <Link to="/MainToDo">
                   <a class="nav-link" aria-current="page" href="#">
-                    | TO DO APP
+                    Write Todo List
                   </a>
                 </Link>
               </li>
@@ -39,7 +39,7 @@ function Navigation() {
               <li class="nav-item items">
                 <Link to="/Carousel">
                   <a class="nav-link" aria-current="page" href="#">
-                    | GALLERY
+                    Gallery
                   </a>
                 </Link>
               </li>
@@ -47,7 +47,7 @@ function Navigation() {
               <li class="nav-item items">
                 <Link to="/InfoForm">
                   <a class="nav-link" aria-current="page" href="#">
-                    | INFORMATION
+                    Live Information
                   </a>
                 </Link>
               </li>
