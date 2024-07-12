@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Navigation from "../Navigation/Navigation";
+import Footer from "../Footer/Footer";
 function InfoForm() {
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
@@ -107,6 +108,7 @@ function InfoForm() {
               </div>
             </div>
           </div>
+          <Footer />
         </Conatiner>
       </MainConatiner>
     </>
@@ -138,7 +140,6 @@ const Button = styled.button`
   margin: 4px 2px;
   cursor: pointer;
   border: 2px solid rgb(255, 255, 255);
-  width: 40%;
   &:hover {
     background-color: #45a049;
   }

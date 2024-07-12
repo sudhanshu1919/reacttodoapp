@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import downarrow from "../../assets/images/down-arrow.png";
-// This is Css File, We have import here
-// import "./Navigation.css";
 import { Style } from "@mui/icons-material";
 
 function Navigation() {

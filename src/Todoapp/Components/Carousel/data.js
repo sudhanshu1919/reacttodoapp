@@ -116,6 +116,13 @@ export const sculptureList = [
     price: "₹ : 27,000/-",
     Category: "Phone",
     About:
-      "17.00 cm (6.7-inch) Super Retina XDR display featuring Always-On and ProMotion,Dynamic Island, a magical new way to interact with iPhon,48MP Main camera for up to 4x greater resolution,Cinematic mode now in 4K Dolby Vision up to 30 fps",
+      "17.00 cm (6.7-inch) Super Retina XDR display featuring Always-On and ProMotion,Dynamic Island",
+  },
+  {
+    id: "13",
+    image:
+      "https://media.istockphoto.com/id/1397892955/photo/thank-you-message-for-card-presentation-business-expressing-gratitude-acknowledgment-and.jpg?s=612x612&w=0&k=20&c=7Lyf2sRAJnX_uiDy3ZEytmirul8pyJWm4l2fxiUtdvk=",
+    Name: "Thank You",
+    About: "It was a basic shopping card..!",
   },
 ];

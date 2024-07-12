@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ToDoInput from "../ToDoInput/ToDoInput";
 import ToDoItems from "../ToDoItems/ToDoItems";
 import Navigation from "../../Navigation/Navigation";
+import Footer from "../../Footer/Footer";
 function MainToDo(props) {
   return (
     <>
@@ -23,6 +24,7 @@ function MainToDo(props) {
               />
             </div>
           </ItemContainer>
+          <Footer />
         </Conatiner>
       </MainConatiner>
     </>
