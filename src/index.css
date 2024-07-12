@@ -61,3 +61,18 @@ body {
   width: 70vh;
   overflow-y: auto;
 }
+
+.info-headding {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.info-text {
+  background: #4caf50;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px 40px 5px;
+  color: white;
+  font-size: 17px;
+  width: 73vh;
+}
