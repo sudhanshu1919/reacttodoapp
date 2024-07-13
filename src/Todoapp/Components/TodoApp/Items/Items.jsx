@@ -4,6 +4,7 @@ import Delete from "../../../assets/images/delete.png";
 import Right from "../../../assets/images/right.png";
 import Wrong from "../../../assets/images/x-mark.png";
 import styled from "styled-components";
+
 function Items(props) {
   const [isEditing, setEditing] = useState(false);
   const [inpText, setInpText] = useState(props.item);
@@ -26,48 +27,41 @@ function Items(props) {
   return (
     <div className="item-container">
       {isEditing ? (
-        <>
-          <ItmCon>
-            <div>
-              <input
-                className="todo-inp2"
-                type="text"
-                value={inpText}
-                onChange={(e) => setInpText(e.target.value)}
-              />
-            </div>
-
-            <div>
-              <Button onClick={handleUpdate} className="mx-1">
-                <img src={Right} width="25px" alt="Right" />
-              </Button>
-              <Button onClick={handleCancel}>
-                <img src={Wrong} width="25px" alt="Wrong" />
-              </Button>
-            </div>
-          </ItmCon>
-        </>
+        <ItmCon>
+          <div>
+            <input
+              className="todo-inp2"
+              type="text"
+              value={inpText}
+              onChange={(e) => setInpText(e.target.value)}
+            />
+          </div>
+          <div>
+            <Button onClick={handleUpdate} className="mx-1">
+              <img src={Right} width="25px" alt="Right" />
+            </Button>
+            <Button onClick={handleCancel}>
+              <img src={Wrong} width="25px" alt="Wrong" />
+            </Button>
+          </div>
+        </ItmCon>
       ) : (
-        <>
-          <ItmCon2>
-            <div>
-              <p className="todo-inp3 mt-2">{props.item}</p>
-            </div>
-
-            <div>
-              <Button className="mx-1" onClick={() => setEditing(true)}>
-                <img src={Edit} width="30px" alt="Edit" />
-              </Button>
-
-              <Button
-                className="mt-2"
-                onClick={() => props.deleteData(props.item)}
-              >
-                <img src={Delete} width="30px" alt="Delete" />
-              </Button>
-            </div>
-          </ItmCon2>
-        </>
+        <ItmCon2>
+          <div>
+            <p className="todo-inp3 mt-2">{props.item}</p>
+          </div>
+          <div>
+            <Button className="mx-1" onClick={() => setEditing(true)}>
+              <img src={Edit} width="30px" alt="Edit" />
+            </Button>
+            <Button
+              className="mt-2"
+              onClick={() => props.deleteData(props.item)}
+            >
+              <img src={Delete} width="30px" alt="Delete" />
+            </Button>
+          </div>
+        </ItmCon2>
       )}
     </div>
   );
@@ -76,13 +70,18 @@ function Items(props) {
 const ItmCon = styled.div`
   display: flex;
   margin-top: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Button = styled.button`
   background-color: #4caf50;
   border: none;
   color: white;
-  padding: 5px 28px 5px;
+  padding: 5px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -93,10 +92,26 @@ const Button = styled.button`
   &:hover {
     background-color: #45a049;
   }
+
+  @media (max-width: 768px) {
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
 `;
 
 const ItmCon2 = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
+
 export default Items;
