@@ -37,7 +37,7 @@ const MainContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@ const MainContainer = styled.div`
 const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   align-items: center;

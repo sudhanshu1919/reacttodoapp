@@ -6,11 +6,11 @@ import { Style } from "@mui/icons-material";
 function Navigation() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand main-headding" href="#">
+          {/* <a class="navbar-brand main-headding" href="#">
             Web Developer
-          </a>
+          </a> */}
           <button
             class="navbar-toggler"
             type="button"
