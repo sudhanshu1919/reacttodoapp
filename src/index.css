@@ -50,6 +50,7 @@ body {
   padding: 5px 40px 5px;
   color: white;
   font-size: 17px;
+  width: 60vh;
 }
 
 .todo-inp3 {
