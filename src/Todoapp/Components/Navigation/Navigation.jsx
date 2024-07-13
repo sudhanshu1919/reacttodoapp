@@ -9,7 +9,7 @@ function Navigation() {
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           {/* <a class="navbar-brand main-headding" href="#">
-            Web Developer
+            Todo App
           </a> */}
           <button
             class="navbar-toggler"

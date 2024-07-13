@@ -3,7 +3,7 @@ import styled from "styled-components";
 function Footer() {
   return (
     <div>
-      <div className="text-center mt-3">
+      <div className="text-center  mt-1 mb-2">
         <span className="mx-1 text-white">&#169;</span>
         <span className="mx-1  text-white">Coppy Right - 2024 </span>
         <span className=" text-white"> | Designed By </span>
